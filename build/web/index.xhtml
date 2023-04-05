@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <link rel="shortcut icon" href="resources/assets/logo.png"/>
+        <title>Página inicial</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+    </h:head>
+    
+    <h:body class="body-a" >
+        
+        <div class="body">
+            <header>
+
+                    <div  class="header">
+                        
+                        <h:link class="list-pat" outcome="/funcionario/Listar.xhtml" value="Funcionários"/>
+                        <h:link class="list-pat" outcome="/equipamento/ListarPat.xhtml" value="Patrimônios"/>
+                        
+                        <div class="logos">
+                        <h:link outcome="/index.xhtml" value="Stefanini" id="logo2"/>
+                        <img id="logo" src="resources/assets/logo.png" alt="Stefanini Logo"></img>
+                        </div>
+                    </div>
+
+            </header>
+       <main >
+           
+           <div class="main">
+               
+           <article>
+               
+               <div  class="article">
+                   
+                   <div class="items">
+                   <h3>dados necessários:</h3>
+                   <h5>ID <i class="fa-sharp fa-solid fa-id-card"></i></h5>
+                   <h5>Nome<i class="fa-solid fa-user"></i></h5>
+                   <h5>Cpf<i class="fa-solid fa-address-card"></i></h5>
+                   <h5>E-mail<i class="fa-sharp fa-solid fa-envelope"></i></h5>
+                   <h5>Cargo<i class="fa-sharp fa-solid fa-briefcase"></i></h5>
+                   <h5>Descrição<i class="fa-sharp fa-solid fa-circle-info"></i></h5>
+                   <h5>Patrimônio<i class="fa-sharp fa-solid fa-building"></i></h5>
+                   <h5>Tipo<i class="fa-solid fa-tablet-screen-button"></i></h5>
+                   
+                   </div>
+                   
+               </div>
+           
+           </article> 
+           
+               
+           <figure >
+               <div class="figure">
+                   
+                   <div class="infos"> 
+                       <h3 class="titulo">POR QUE CRIAMOS ESTA FERRAMENTA?</h3>
+                       <h5 class="msg-tit">Apresentamos o nosso mais novo aplicativo de controle de patrimônios, desenvolvido para facilitar a gestão de bens e equipamentos da empresa. 
+                       Com ele, é possível criar funcionários, cadastrar patrimônios e realizar a atribuição desses bens a colaboradores de forma prática e eficiente.</h5>
+
+<h5 class="msg"> Com a crescente demanda pelo trabalho remoto, a gestão de patrimônios se tornou ainda mais desafiadora. No entanto, nosso aplicativo oferece a solução para gerenciar seus ativos de maneira simples e eficiente, inclusive para aqueles que precisam ser utilizados em home office.
+
+O aplicativo permite que os gestores criem funcionários e adicionem informações pessoais e de contato, como e-mail e CPF. Além disso, é possível cadastrar patrimônios de forma detalhada, incluindo informações sobre o tipo, modelo e número de série.
+
+O grande diferencial do nosso aplicativo é a possibilidade de atribuir patrimônios a usuários de forma prática e rápida. Ao receber um patrimônio, basta realizar a atribuição no aplicativo, especificando o usuário que irá utilizar o bem. Isso garante um controle preciso sobre os bens da empresa, evitando extravios e prejuízos financeiros.
+
+Com uma interface intuitiva e fácil de usar, o nosso aplicativo de controle de patrimônios é completo!</h5>
+                   </div>
+                   <div class="btn-add">
+                   <h:link class="add-fun" outcome="/funcionario/Incluir.xhtml" value="ADICIONE UM FUNCIONÁRIO"/>
+                   <h:link class="add-pat" outcome="/equipamento/IncluirPat.xhtml" value="ADICIONE UM PATRIMÔNIO"/>
+                   </div>
+                </div>
+           </figure>
+             </div>
+       </main>
+       <script src="https://kit.fontawesome.com/0a15cfac41.js" crossorigin="anonymous"></script>
+        </div>
+    </h:body>
+</html>
+

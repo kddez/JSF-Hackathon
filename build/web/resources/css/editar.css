@@ -1,0 +1,109 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@300&family=Ubuntu&display=swap');
+body{
+    height: 90vh;
+}
+
+.container{
+    background-color: #11564c;
+}
+
+#logo{
+    width: 8rem;
+        height: 10rem;
+        margin-right: 1.3rem;
+}
+
+#logo2{
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+     text-decoration: none;
+     font-weight: 700;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row-reverse;
+        text-align:  center;
+            margin-top: 1.5rem;
+    margin-right: 37rem;
+        align-items: center;
+
+}
+
+.formSt{
+    height: 450px !important;
+    margin-top: 3rem;
+    width: 500px !important;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto; 
+    /*border: 2px solid purple !important;
+    */
+}
+.main{
+    padding: 1px 6rem 0 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card{
+    margin: 0px 30px;
+}
+
+ .input{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
+    .inputs{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.8rem;
+    }
+    
+    h3{
+        margin-left: 3.8rem;
+        color:#11564c;
+        font-size: 1.1rem;
+    }
+    
+    .inStyle {
+        width: 25rem;
+        box-shadow: none !important;
+        border-radius: 10px;
+        border: .1rem solid #11564c !important;
+    }
+    
+    .input label{
+    color:#11564c;
+    text-align: left;
+    margin: 5px 10px;
+}
+
+    .conteudo{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    .botao1{
+        margin: 0 0 2rem 4rem;
+        
+    }
+    
+    .Btn-Edit{
+        margin-right: 2rem !important;
+        color: white !important;
+    background: #11564c !important;
+    border: none !important;
+    padding: 0rem 2rem .1rem 2rem !important;
+    }
+    
+    .Btn-Edit:hover{
+    background: #11564c !important;
+    opacity: 50% !important;
+}

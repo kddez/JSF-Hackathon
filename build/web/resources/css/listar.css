@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@300&family=Ubuntu&display=swap');
+body{
+    height: 90vh;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 90vw;
+}
+.card{
+    margin: 0px 30px;
+}
+
+html{
+    width: 95%;
+    height: 100%;
+    background: #11564c;
+}
+
+#logo{
+    width: 8rem;
+        height: 10rem;
+        margin-right: 1.3rem;
+}
+
+#logo2{
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+     text-decoration: none;
+     font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+.ui-widget {
+    font-size: 12px !important;
+}
+.ui-layout-north {
+    z-index: 20 !important;
+    overflow: visible !important;;
+}
+.ui-layout-north .ui-layout-unit-content {
+    overflow: visible !important;
+}
+.ui-widget-header {
+    text-align: center;
+    text-transform: uppercase;
+}
+.ui-button {
+    margin-top: 10px !important;
+}
+
+.htemp{
+    display: flex;
+    flex-direction: row-reverse;
+        align-items: center;
+            margin-top: 1.5rem;
+            margin-right: 34rem;
+}
+
+.BtnList{
+    margin-right: 2rem !important;
+        color: white !important;
+    background: #11564c !important;
+    border: none !important;
+    padding: 0rem 2rem .1rem 2rem !important;
+}
+
+.BtnList:hover{
+    background: #11564c !important;
+    opacity: 50% !important;
+}
+
+.tit-page{
+    display: flex;
+    text-align: center;
+}
+
+h2{
+    margin-left: 21rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
