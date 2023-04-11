@@ -1,9 +1,5 @@
 package controller;
 
-
-
-
-
 import dao.Equipamento;
 import controller.util.JsfUtil;
 import controller.util.JsfUtil.PersistAction;
@@ -58,12 +54,10 @@ public class EquipamentoController implements Serializable {
         initializeEmbeddableKey();
         return selected;
     }
-    
+
     public boolean autenticarPatri (Equipamento equipamento){
         Boolean autenticar = true;
         
-        /*Se o Patrimônio digitado NÃO possuir "ST" seguido de 5 dígitos numéricos, exibirá um erro;
-           */
         String patrimonio = equipamento.getPatrimony();
        if (!patrimonio.matches("^ST\\d{5}$")){
             JsfUtil.addErrorMessage("Patrimônio inválido.");
@@ -76,34 +70,33 @@ public class EquipamentoController implements Serializable {
                     JsfUtil.addErrorMessage("Patrimônio já existe");
                     autenticar = false;
                     break;
-                }
-            }
-            
-        }
+                }}}
+       
+       /*if (equipamento.getFunFk() == null){
+           JsfUtil.addErrorMessage("ID não foi preenchido corretamente");
+           autenticar =false;}*/
+       
        
        if (equipamento.getTipo().length() > 2){
            return autenticar;
            
        }else{
            JsfUtil.addErrorMessage("Tipo Inválido");
-           autenticar = false;
-    }
+           autenticar = false;}
        
        if (equipamento.getDescription().length() > 5){
             return autenticar;
     }else{
             JsfUtil.addErrorMessage("Descrição Inválida");
-            return false;
-        }
+            return false;}
        
     }
     
     public void limparIncluirPat(){
             selected.setPatrimony("");
             selected.setDescription("");
-            selected.setFunFk("");
+            selected.setFunFk(null);
             selected.setTipo("");
-            
         }
     
     

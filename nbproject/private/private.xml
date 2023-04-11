@@ -10,16 +10,16 @@
             </bookmark>
         </file>
         <file>
-            <url>web/funcionario/Incluir.xhtml</url>
-            <bookmark id="2">
+            <url>src/java/dao/Funcionario.java</url>
+            <bookmark id="1">
                 <name/>
                 <line>0</line>
                 <key/>
             </bookmark>
         </file>
         <file>
-            <url>src/java/dao/Funcionario.java</url>
-            <bookmark id="1">
+            <url>web/funcionario/Incluir.xhtml</url>
+            <bookmark id="2">
                 <name/>
                 <line>0</line>
                 <key/>
@@ -28,9 +28,7 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/marco/Projetos/Hackathon/src/java/dao/Funcionario.java</file>
-            <file>file:/C:/Users/marco/Projetos/Hackathon/src/java/controller/FuncionarioController.java</file>
-            <file>file:/C:/Users/marco/Projetos/Hackathon/src/java/controller/EquipamentoController.java</file>
+            <file>file:/C:/Users/marco/Stefanini/JSF-Hackathon/src/java/dao/Equipamento.java</file>
         </group>
     </open-files>
 </project-private>

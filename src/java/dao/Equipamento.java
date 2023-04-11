@@ -12,13 +12,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
-import org.hibernate.validator.constraints.br.CPF;
 
 /**
  *
@@ -30,7 +31,6 @@ import org.hibernate.validator.constraints.br.CPF;
 @NamedQueries({
     @NamedQuery(name = "Equipamento.findAll", query = "SELECT u FROM Equipamento u"),
     @NamedQuery(name = "Equipamento.findByDescription", query = "SELECT u FROM Equipamento u WHERE u.description = :description"),
-    @NamedQuery(name = "Equipamento.findByCpf", query = "SELECT u FROM Equipamento u WHERE u.funFk = :funFk"),
     @NamedQuery(name = "Equipamento.findById", query = "SELECT u FROM Equipamento u WHERE u.id = :idPatry"),
     @NamedQuery(name = "Equipamento.findByTipo", query = "SELECT u FROM Equipamento u WHERE u.tipo = :tipo"),
     @NamedQuery(name = "Equipamento.findByPatrimony", query = "SELECT u FROM Equipamento u WHERE u.patrimony = :patrimony")})
@@ -45,11 +45,9 @@ public class Equipamento implements Serializable {
     @Column(name = "id")
     private Long id;
     
-    @Basic(optional = false)
-    @Size(min = 1, max = 50)
-    @Column(name = "funFk")
-    @CPF
-    private String funFk;
+    @ManyToOne
+    @JoinColumn(name = "funcionario_id")
+    private Funcionario funFk;
     
     @Basic
     @NotNull
@@ -77,7 +75,7 @@ public class Equipamento implements Serializable {
         this.id = id;
     }
 
-    public Equipamento(Long id, String patrimony, String funFk, String description, String tipo) {
+    public Equipamento(Long id, String patrimony, Funcionario funFk, String description, String tipo) {
         this.id = id;
         this.patrimony = patrimony;
         this.funFk = funFk;
@@ -109,11 +107,11 @@ public class Equipamento implements Serializable {
         this.description = description;
     }
     
-    public String getFunFk () {
+    public Funcionario getFunFk () {
         return funFk;
     }
 
-    public void setFunFk (String funFk) {
+    public void setFunFk (Funcionario funFk) {
         this.funFk = funFk;
     }
     
